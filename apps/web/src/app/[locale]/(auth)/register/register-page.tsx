@@ -159,21 +159,6 @@ export const RegisterForm = () => {
                   </FormItem>
                 )}
               />
-              <FormField
-                control={control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel htmlFor="email">{t("email")}</FormLabel>
-                    <FormControl>
-                      <Input
-                        {...field}
-                        id="email"
-                        size="lg"
-                        error={!!formState.errors.email}
-                        placeholder={t("emailPlaceholder")}
-                        disabled={formState.isSubmitting}
-                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

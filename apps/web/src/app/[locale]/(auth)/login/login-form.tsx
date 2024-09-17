@@ -170,16 +170,6 @@ export function LoginForm() {
         <label htmlFor="email" className="mb-1 text-gray-500">
           {t("email")}
         </label>
-        <Input
-          className="w-full"
-          id="email"
-          size="lg"
-          error={!!formState.errors.email}
-          autoFocus={true}
-          disabled={formState.isSubmitting}
-          placeholder={t("emailPlaceholder")}
-          {...register("email", { validate: validEmail })}
-        />
         {formState.errors.email?.message ? (
           <div className="mt-2 text-sm text-rose-500">
             {formState.errors.email.message}
